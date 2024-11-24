@@ -1,8 +1,8 @@
 //import React from 'react';
-import './Notification.css';
+import './Description.css';
 
-const Notification = ({ message }) => {
-  return <p className="notification">{message}</p>;
+const Description = ({ message }) => {
+  return <p className="description">{message}</p>;
 };
 
-export default Notification;
+export default Description;
