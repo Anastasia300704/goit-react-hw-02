@@ -1,19 +1,14 @@
-import React from 'react';
-import './Feedback.css';
+import React from "react";
 
-const Feedback = ({ feedback, totalFeedback, positiveFeedbackPercentage }) => {
-  return (
-    <div className="feedback">
-      <h2>Feedback Statistics</h2>
-      <ul>
-        <li>Good: {feedback.good}</li>
-        <li>Neutral: {feedback.neutral}</li>
-        <li>Bad: {feedback.bad}</li>
-        <li>Total Feedback: {totalFeedback}</li>
-        <li>Positive Feedback: {positiveFeedbackPercentage}%</li>
-      </ul>
-    </div>
-  );
-};
+const Feedback = ({ feedback, total, positivePercentage }) => (
+  <div>
+    <p>Good: {feedback.good}</p>
+    <p>Neutral: {feedback.neutral}</p>
+    <p>Bad: {feedback.bad}</p>
+    <p>Total: {total}</p>
+    <p>Positive: {positivePercentage}%</p>
+  </div>
+);
 
 export default Feedback;
+
